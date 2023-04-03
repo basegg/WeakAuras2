@@ -13,6 +13,7 @@ end
 
 local LibSerialize = LibStub("LibSerialize")
 local LibDeflate = LibStub:GetLibrary("LibDeflate")
+local WA_TalentLib = LibStub:GetLibrary("LibGroupTalents-1.0", true)
 
 local UnitAura = UnitAura
 -- Unit Aura functions that return info about the first Aura matching the spellName or spellID given on the unit.
@@ -512,7 +513,8 @@ local overridden = {
   WA_Utf8Sub = WA_Utf8Sub,
   ActionButton_ShowOverlayGlow = WeakAuras.ShowOverlayGlow,
   ActionButton_HideOverlayGlow = WeakAuras.HideOverlayGlow,
-  WeakAuras = FakeWeakAuras
+  WeakAuras = FakeWeakAuras,
+  WA_TalentLib = WA_TalentLib
 }
 
 local env_getglobal_custom
